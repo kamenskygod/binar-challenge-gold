@@ -1,0 +1,153 @@
+/* Search Bar Content */
+.section-searchbar {
+  position: relative;
+}
+.section-list-mobil,
+.section-detail-car {
+  margin-bottom: 32px;
+}
+.wrapper-searchbar-form {
+  width: 1047px;
+  border-radius: 8px;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  z-index: 1;
+}
+.wrapper-searchbar {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 92px;
+  gap: 16px;
+  padding: 24px;
+}
+
+.form-label-searchbar {
+  font-size: 12px;
+  line-height: 18px;
+  color: #3c3c3c;
+}
+.form-input-searchbar:disabled,
+.form-input-searchbar:disabled::placeholder {
+  border: none !important;
+  color: #aeaeae !important;
+}
+select.form-input-searchbar {
+  border: 1px solid #cccccc !important;
+}
+.form-input-searchbar {
+  padding: 9px 12px;
+  height: 36px;
+  border-radius: 2px;
+  color: #222222 !important;
+}
+.form-input-searchbar,
+.form-input-searchbar::placeholder {
+  font-size: 12px;
+  line-height: 18px;
+  color: #222222 !important;
+}
+.form-input-searchbar:focus,
+.form-input-searchbar:focus:not(:placeholder-shown) {
+  border: 1px solid #35b0a7 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0) !important;
+}
+.form-input-searchbar:not(:placeholder-shown) {
+  border: 1px solid #222222;
+  color: #222222;
+  font-size: 12px;
+}
+
+.btn-searchbar {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 2px;
+  font-weight: 700;
+  border: none !important;
+}
+.btn-searchbar,
+.btn-searchbar:hover,
+.btn-searchbar:focus {
+  background-color: #5cb85f;
+  color: #ffffff;
+}
+.btn-searchbar:focus {
+  background-color: #5cb85f !important;
+  color: #ffffff !important;
+  border-radius: 2px !important;
+}
+
+/* List Car */
+.wrapper-list-car {
+  width: 1047px;
+  margin-top: 100px;
+}
+.card-list-car{
+  padding: 24px;
+}
+.img-card{
+  width: 100%;
+  height: 222px;
+  object-fit: cover;
+}
+.label{
+  font-weight: 400;
+  font-size: 14px;
+}
+.price{
+  font-size: 16px;
+  line-height: 24px;
+}
+.description{
+  font-size: 14px;
+  line-height: 20px;
+}
+.green-btn{
+  padding: 8px 12px;
+  color: #FFFFFF !important;
+  height: 48px;
+  background-color: #5CB85F !important;
+  border-radius: 2px !important;
+}
+.green-btn:hover{
+  background-color: #1d221d;
+}
+
+/* Detail Car */
+.section-searchbar-detail {
+  height: 266px;
+  width: 100%;
+  position: relative;
+  background-color: #F1F3FF;
+}
+.wrapper-searchbar-form-detail {
+  width: 1047px;
+  border-radius: 8px;
+  bottom: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  z-index: 1;
+}
+.container-searchbar-detail {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+}
+.wrapper-searchbar-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+.title-searchbar-detail {
+  font-size: 16px;
+  line-height: 20px;
+}
+.section-detail-car {
+  width: 1047px;
+  margin-top: 100px;
+}
