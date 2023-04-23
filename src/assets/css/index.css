@@ -567,3 +567,9 @@
     padding-right: 71px;
   }
 }
+
+/* Login Pages */
+.login-content {
+  border: 1px solid black;
+  border-radius: 10px;
+}
