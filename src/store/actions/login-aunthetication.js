@@ -1,6 +1,6 @@
-export const TriggerFunction = (count) => {
+export const authentication = (state) => {
   return {
-    type: "COUNTER",
-    payload: count,
+    type: "AUTHENCTICATION",
+    payload: state,
   };
 };
