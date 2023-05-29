@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Button, Col, Form, Input, Row } from "reactstrap";
+import { TriggerFunction } from "../../store/actions/login-aunthetication";
 
 const Login = () => {
-  const [state, setState] = useState({
-    name: "",
+  const dispatch = useDispatch();
+  const { count } = useSelector((state) => state.AuthLogin);
+  const [setState] = useState({
+    username: "",
     password: "",
   });
 
@@ -17,8 +21,9 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(state);
+    dispatch(TriggerFunction(count));
   };
+  console.log(count);
 
   return (
     <div className="d-flex justify-content-center" style={{ padding: "10rem" }}>
