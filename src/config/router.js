@@ -7,7 +7,7 @@ import DetailCar from '../pages/search-car/detail';
 const routing = (props) => {
   return [
     { index: true, path: '/', element: <Home {...props} title="Home" /> },
-    { index: true, path: '/Login', element: <Login {...props} title="Login" /> },
+    { index: true, path: '/masuk', element: <Login {...props} title="Masuk" /> },
     { index: true, path: '/cari-mobil', element: <SearchCar {...props} title="Cari Mobil" /> },
     { index: true, path: '/cari-mobil/:id', element: <DetailCar {...props} title="Cari Mobil" /> },
     { index: true, path: '*', element: <div>Halaman Not Found</div> },
