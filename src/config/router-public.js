@@ -3,7 +3,7 @@ import Login from '../pages/login';
 import Register from '../pages/registrasi';
 const routing = (props) => {
   return [
-    { index: true, path: '/masuk', element: <Login {...props} title="masuk" /> },
+    { index: true, path: '/sign-in', element: <Login {...props} title="Login" /> },
     { index: true, path: '/registrasi', element: <Register {...props} title="Registrasi" /> },
     { index: true, path: '*', element: <div>Halaman Not Found</div> },
   ];

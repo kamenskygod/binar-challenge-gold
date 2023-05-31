@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = (_) => {
     _.preventDefault();
     Services()
-      .post('https://bootcamp-rent-cars.herokuapp.com/customer/auth/register', {
+      .post('https://bootcamp-rent-cars.herokuapp.com/customer/auth/login', {
         ...state,
       })
       .then((response) => {

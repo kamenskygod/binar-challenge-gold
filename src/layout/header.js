@@ -36,7 +36,7 @@ const Header = (props) => {
                 {!token ? (
                   <Button
                     type="button"
-                    onClick={() => navigate('/masuk')}
+                    onClick={() => navigate('/sign-in')}
                     className="btn btn-sm btn-success"
                   >
                     Register

@@ -27,7 +27,7 @@ const Register = () => {
         role: 'Admin',
       })
       .then((response) => {
-        navigate('/masuk');
+        navigate('/sign-in');
       })
       .catch((err) => err.message);
   };
