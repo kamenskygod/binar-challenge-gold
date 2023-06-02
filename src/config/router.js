@@ -1,16 +1,18 @@
-import { useRoutes } from 'react-router-dom';
-import Home from '../pages/home';
-import Login from '../pages/login';
-import SearchCar from '../pages/search-car';
-import DetailCar from '../pages/search-car/detail';
+import { useRoutes } from "react-router-dom";
+import Home from "../pages/home";
+import Login from "../pages/login";
+import SearchCar from "../pages/search-car";
+import DetailCar from "../pages/search-car/detail";
+import Register from "../pages/registrasi";
 
 const routing = (props) => {
   return [
-    { index: true, path: '/', element: <Home {...props} title="Home" /> },
-    { index: true, path: '/sign-in', element: <Login {...props} title="Login" /> },
-    { index: true, path: '/cari-mobil', element: <SearchCar {...props} title="Cari Mobil" /> },
-    { index: true, path: '/cari-mobil/:id', element: <DetailCar {...props} title="Cari Mobil" /> },
-    { index: true, path: '*', element: <div>Halaman Not Found</div> },
+    { index: true, path: "/", element: <Home {...props} title="Home" /> },
+    { index: true, path: "/sign-in", element: <Login {...props} title="Login" /> },
+    { index: true, path: "/registrasi", element: <Register {...props} title="Registrasi" /> },
+    { index: true, path: "/cari-mobil", element: <SearchCar {...props} title="Cari Mobil" /> },
+    { index: true, path: "/cari-mobil/:id", element: <DetailCar {...props} title="Cari Mobil" /> },
+    { index: true, path: "*", element: <div>Halaman Not Found</div> },
   ];
 };
 

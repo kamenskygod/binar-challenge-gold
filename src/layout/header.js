@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Button from '../components/Button';
-import SideBar from '../components/Sidebar';
-import { token } from '../config/token';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
+import SideBar from "../components/Sidebar";
+import { token } from "../config/token";
 const Header = (props) => {
   const navigate = useNavigate();
   const [open, setopen] = useState(false);
@@ -34,18 +34,14 @@ const Header = (props) => {
               </li>
               <li>
                 {!token ? (
-                  <Button
-                    type="button"
-                    onClick={() => navigate('/sign-in')}
-                    className="btn btn-sm btn-success"
-                  >
+                  <Button type="button" onClick={() => navigate("/sign-in")} className="btn btn-sm btn-success">
                     Register
                   </Button>
                 ) : (
                   <Button
                     type="button"
                     onClick={() => {
-                      localStorage.removeItem('ACCESS_TOKEN');
+                      localStorage.removeItem("ACCESS_TOKEN");
                       window.location.reload();
                     }}
                     className="btn btn-sm btn-success"
@@ -56,11 +52,7 @@ const Header = (props) => {
               </li>
             </ul>
             <div className="text-end">
-              <button
-                className="btn btn-sidebar-menu d-lg-none px-1"
-                type="button"
-                onClick={openSideBar}
-              >
+              <button className="btn btn-sidebar-menu d-lg-none px-1" type="button" onClick={openSideBar}>
                 <i className="fa fa-bars"></i>
               </button>
             </div>
