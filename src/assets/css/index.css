@@ -347,10 +347,10 @@ html {
 }
 .button-item-custom::after {
   background-image: none !important;
-  content: '\f107' !important;
+  content: "\f107" !important;
   width: max-content !important;
   height: max-content !important;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   text-align: center;
   color: #000000;
 }
@@ -571,10 +571,48 @@ html {
 
 /* Login Pages */
 .login-content {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   border-radius: 10px;
 }
 .login-content p button {
   border: inherit;
   color: #0d28a6;
+}
+
+/* Etiket pages */
+.pdf-btn {
+  width: 557px;
+  height: 162px;
+  background: #eeeeee;
+}
+
+.card-pdf {
+  width: 605px;
+  height: 290px;
+  left: 0px;
+  top: 0px;
+}
+
+.title-tiket {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.title-tiket2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.title-unduh {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
 }

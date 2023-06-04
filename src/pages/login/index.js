@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { Button, Col, Form, Input, Row } from 'reactstrap';
-import { authentication } from '../../store/actions/login-aunthetication';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { Button, Col, Form, Input, Row } from "reactstrap";
+import { authentication } from "../../store/actions/login-aunthetication";
 
 const Login = () => {
   const dispatch = useDispatch();
   const [state, setState] = useState({
-    email: 'customer@bcr.io',
-    password: '123456',
+    email: "customer@bcr.io",
+    password: "123456",
   });
 
   const handleChange = (e) => {
@@ -24,7 +24,7 @@ const Login = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center" style={{ padding: '10rem' }}>
+    <div className="d-flex justify-content-center" style={{ padding: "10rem" }}>
       <Form onSubmit={handleSubmit}>
         <Row className="p-5 login-content">
           <Col md={12} className="pb-4">
@@ -37,7 +37,7 @@ const Login = () => {
             <Button className="w-100" outline color="primary">
               Sign In
             </Button>
-            <p className="d-flex justify-content-center w-100" style={{ padding: '5px' }}>
+            <p className="d-flex justify-content-center w-100" style={{ padding: "5px" }}>
               Don't have an account? Sign Up for free
             </p>
           </Col>

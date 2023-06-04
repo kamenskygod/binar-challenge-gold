@@ -1,9 +1,11 @@
 import { useRoutes } from "react-router-dom";
 import Login from "../pages/login";
+// import Etiket from "../pages/tiket";
 
 const routing = (props) => {
   return [
     { index: true, path: "/Login", element: <Login {...props} title="Login" /> },
+    // { index: true, path: "/tiket", element: <Etiket {...props} title="tiket" /> },
     { index: true, path: "*", element: <div>Halaman Not Found</div> },
   ];
 };
