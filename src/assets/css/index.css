@@ -347,10 +347,10 @@ html {
 }
 .button-item-custom::after {
   background-image: none !important;
-  content: "\f107" !important;
+  content: '\f107' !important;
   width: max-content !important;
   height: max-content !important;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   text-align: center;
   color: #000000;
 }
@@ -580,6 +580,11 @@ html {
 }
 
 /* Etiket pages */
+.etiket-js {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .pdf-btn {
   width: 557px;
   height: 162px;
@@ -594,7 +599,7 @@ html {
 }
 
 .title-tiket {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -602,7 +607,7 @@ html {
 }
 
 .title-tiket2 {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -610,7 +615,7 @@ html {
 }
 
 .title-unduh {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
